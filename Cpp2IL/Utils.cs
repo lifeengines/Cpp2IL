@@ -836,5 +836,10 @@ namespace Cpp2IL
             };
             return num1;
         }
+
+        public static int GetPointerSizeBytes()
+        {
+            return LibCpp2IlMain.ThePe!.is32Bit ? 4 : 8;
+        }
     }
 }
